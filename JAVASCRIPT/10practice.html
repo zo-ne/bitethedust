@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=1
+        var b=1
+        var n= prompt("請輸入第幾位")
+        var f
+
+        if(n==1||n==2){
+            f=1
+        }
+        else{
+            for (var i=3;i<=n;i++){
+                f=a+b
+                a=b
+                b=f
+            }
+        }
+        document.write("第"+n+"位數為"+f)
+
+    </script>
+</body>
+</html>

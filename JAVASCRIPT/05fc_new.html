@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var paytype = prompt("付款方式 1.刷卡 2.貨到付款 3.肉償")
+
+        if (paytype==1) {
+            document.write("刷卡")
+        }
+        if (paytype==2){
+            document.write("貨到付款")
+        }
+        if (paytype==3){
+            document.write("肉償")
+        }
+        if (paytype>3 || paytype<1 || isNaN(paytype)
+        ){
+            document.write("請輸入1-3的數字")
+        }
+
+    </script>
+</body>
+</html>

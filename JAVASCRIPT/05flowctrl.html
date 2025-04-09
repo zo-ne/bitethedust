@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>條件判斷示範</title>
+</head>
+<body>
+    <script>
+        var s = 60;
+
+        if (s < 60) {
+            document.write("s的值小於60<br>");
+        }
+
+        if (s > 60) {
+            document.write("s的值大於60<br>");
+        }
+
+        if (s == 60) {
+            document.write("s的值等於60（寬鬆比較）<br>");
+        }
+
+        if (s == "60") {
+            document.write("s的值等於60（數字 60 和字串 '60' 相等）<br>");
+        }
+
+        if (s === "60") {
+            document.write("s的值等於60（嚴格比較，這行不會執行）<br>");
+        }
+
+        if (s >= 60) {
+            document.write("s的值大於等於60<br>");
+        }
+
+        document.write("<hr>");
+
+        ////////////////////////////////////////
+        // 付款方式選擇
+        var payType = prompt("請選擇付款方式:\n1.信用卡付款\n2.現金付款\n3.轉帳付款\n4.Line Pay\n5.貨到付款");
+
+        if (payType == "1") {
+            document.write("信用卡付款");
+        } else if (payType == "2") {
+            document.write("現金付款");
+        } else if (payType == "3") {
+            document.write("轉帳付款");
+        } else if (payType == "4") {
+            document.write("Line Pay");
+        } else if (payType == "5") {
+            document.write("貨到付款");
+        } else {
+            document.write("選擇錯誤，請輸入 1-5 之間的數字！");
+        }
+    </script>
+</body>
+</html>

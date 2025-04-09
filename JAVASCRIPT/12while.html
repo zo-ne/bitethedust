@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=0
+        while ( a<=5){
+            document.write("執行了"+(a+1)+"次<br>");a++
+        }
+
+        document.write("<hr>")
+
+        i=1
+        var color=prompt("請輸入顏色")
+        while (i<=6){
+            document.write("<h"+i+" style='color:"+color+";background-color:yellow;'>welcome! </h"+i+">");
+            i++
+        }
+        document.write("<hr>")
+        document.write("hehehe")
+
+        var i = 1;
+        var color = prompt("請輸入顏色");
+        if (!color) {
+            color = "black"; // 預設顏色
+        }
+        while (i <= 6) {
+            document.write("<h" + i + " style='color:" + color + ";background-color:yellow;'>welcome! </h" + i + ">");
+            i++;
+        }
+    </script>
+</body>
+</html>
